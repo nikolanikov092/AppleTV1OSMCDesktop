@@ -21,10 +21,26 @@ apt-get update
 apt-get install xserver-xorg -y
 apt-get install lxde -y
 apt-get install lightdm -y
-apt-get install x11-tools -y
+apt-get install vlc -y
 apt-get install netsurf -y
-apt-get install pcmanfm -y
-mv background.jpg /usr/share/lxde/wallpapers/background.jpg
-pcmanfm --set-wallpaper="/usr/share/lxde/wallpapers/background.jpg
+apt-get install gimp -y
+apt-get install gnome-games -y
+apt-get install libreoffice -y
+apt-get install rhythmbox -y
+apt-get install gnote -y
+apt-get install gparted -y
+mv background.jpg /home/osmc/background.jpg
+rm -rf /usr.splash.png
+cp splash.png /usr/splash.png
 systemctl disable mediacenter
+echo "           _ _   _____                   _  "
+echo "     /\   | | | |  __ \                 | | "
+echo "    /  \  | | | | |  | | ___  _ __   ___| | "
+echo "   / /\ \ | | | | |  | |/ _ \| '_ \ / _ \ | "
+echo "  / ____ \| | | | |__| | (_) | | | |  __/_| "
+echo " /_/    \_\_|_| |_____/ \___/|_| |_|\___(_) "
+echo "                                            "
+echo "Created by Nikola Nikov on a 2006 MacBook!"
+echo "Reboot"
+
 reboot
